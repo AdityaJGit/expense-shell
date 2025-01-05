@@ -66,7 +66,7 @@ VALIDATE $? "unzip backend"
 npm install &>>$LOG_FILE_NAME
 VALIDATE $? "Installing Dependencies"
 
-cp /root/expense-shell/backend.service/etc/systemd/system/backend.service
+cp /home/root/expense-shell/backend.service/etc/systemd/system/backend.service
 
 #Prepare Mysql Schema
 
@@ -84,3 +84,4 @@ VALIDATE $? "Enabling Backend"
 
 systemctl restart backend &>>$LOG_FILE_NAME
 VALIDATE $? "Starting Backend"
+
